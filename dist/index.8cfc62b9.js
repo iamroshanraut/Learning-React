@@ -2957,9 +2957,8 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 }, void 0, false, {
     fileName: "script.js",
     lineNumber: 8,
-    columnNumber: 17
-}, undefined) // className should follow camelCase 
-;
+    columnNumber: 3
+}, undefined); // className should follow camelCase
 // ** React Component **
 // Everything is Component in React.
 // There are Two Type of Component in React.
@@ -2968,24 +2967,47 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 // ** Functional Component **
 // - It just a JavaScript Function Which return some peace of jsx code.
 // Example
-const HeadingComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Namaste React \uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80"
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: "heading1",
+        children: "Akshay Saini"
     }, void 0, false, {
         fileName: "script.js",
-        lineNumber: 22,
-        columnNumber: 12
+        lineNumber: 25,
+        columnNumber: 3
     }, undefined);
-};
-_c = HeadingComponent;
+_c = Title;
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 30,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Namaste React \uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80"
+            }, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 31,
+                columnNumber: 5
+            }, undefined),
+            ";"
+        ]
+    }, void 0, true, {
+        fileName: "script.js",
+        lineNumber: 29,
+        columnNumber: 3
+    }, undefined);
+_c1 = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "script.js",
-    lineNumber: 27,
+    lineNumber: 37,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeadingComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$595d.postlude(module);
 } finally {
