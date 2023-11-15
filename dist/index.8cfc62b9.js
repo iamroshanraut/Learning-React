@@ -2949,16 +2949,43 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 // const heading = React.createElement("h1",{},"Namaste React 🚀");
+// JSX is Syntax it is like html.
 const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "heading",
+    className: "head",
     children: "Namaste React \uD83D\uDE80\uD83D\uDE80"
 }, void 0, false, {
     fileName: "script.js",
-    lineNumber: 7,
+    lineNumber: 8,
     columnNumber: 17
-}, undefined);
+}, undefined) // className should follow camelCase 
+;
+// ** React Component **
+// Everything is Component in React.
+// There are Two Type of Component in React.
+// 1. Class Based Component
+// 2. Functional Component
+// ** Functional Component **
+// - It just a JavaScript Function Which return some peace of jsx code.
+// Example
+const HeadingComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Namaste React \uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80"
+    }, void 0, false, {
+        fileName: "script.js",
+        lineNumber: 22,
+        columnNumber: 12
+    }, undefined);
+};
+_c = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "script.js",
+    lineNumber: 27,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$595d.postlude(module);
 } finally {
