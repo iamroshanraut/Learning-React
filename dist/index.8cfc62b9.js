@@ -2967,22 +2967,17 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 // ** Functional Component **
 // - It just a JavaScript Function Which return some peace of jsx code.
 // Example
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        className: "heading1",
-        children: "Akshay Saini"
-    }, void 0, false, {
-        fileName: "script.js",
-        lineNumber: 25,
-        columnNumber: 3
-    }, undefined);
-_c = Title;
+// we can also write any js direclty into react using {}
 const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+            300,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Hello React!"
+            }, void 0, false, {
                 fileName: "script.js",
                 lineNumber: 30,
-                columnNumber: 5
+                columnNumber: 6
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Namaste React \uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80"
@@ -2995,19 +2990,41 @@ const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         ]
     }, void 0, true, {
         fileName: "script.js",
-        lineNumber: 29,
-        columnNumber: 3
+        lineNumber: 28,
+        columnNumber: 5
     }, undefined);
-_c1 = HeadingComponent;
+_c = HeadingComponent;
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 37,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "heading1",
+                children: "Akshay Saini"
+            }, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 38,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "script.js",
+        lineNumber: 36,
+        columnNumber: 5
+    }, undefined);
+_c1 = Title;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
     fileName: "script.js",
-    lineNumber: 37,
+    lineNumber: 43,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "HeadingComponent");
+$RefreshReg$(_c, "HeadingComponent");
+$RefreshReg$(_c1, "Title");
 
   $parcel$ReactRefreshHelpers$595d.postlude(module);
 } finally {

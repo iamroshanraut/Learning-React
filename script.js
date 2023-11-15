@@ -21,17 +21,23 @@ const heading = (
 
 // Example
 
-const Title = () => (
-  <h1 className="heading1">Akshay Saini</h1>
-);
+// we can also write any js direclty into react using {}
+
 
 const HeadingComponent = () => (
-  <div id="container">
-    <Title />
+    <div id="container">
+    {100+200}
+    {<h1>Hello React!</h1>}
     <h1>Namaste React 🚀🚀🚀🚀🚀</h1>;
   </div>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Title = () => (
+    <div>
+        <HeadingComponent/>
+        <h1 className="heading1">Akshay Saini</h1>
+    </div>
+);
 
-root.render(<HeadingComponent />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Title />);
